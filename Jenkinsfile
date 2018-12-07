@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {   
-        stage ('Stage 1'){
+        stage ('Stage Setup'){
             steps{
                 echo 'Script Startup'
             }
