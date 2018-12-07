@@ -10,5 +10,10 @@ pipeline {
                 echo 'Script Startup'
             }
         }
+        stage('Prepare Pipeline') {
+            steps {
+                sh 'bash ./cd/pipeline-prepare.sh'
+            }
+        }
     }
 }
